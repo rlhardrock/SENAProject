@@ -1,0 +1,127 @@
+/*Pagina de Estilos personalizada*/
+
+.main{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.box {
+    text-align: center
+}
+
+.caja {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/*Personalizacion de los colores de los botones*/
+
+.btn-link {
+    font-weight: 400;
+    color: #28a745;
+    text-decoration: none;
+  }
+  
+  .btn-link:hover {
+    color: #18682b;
+    text-decoration: underline;
+  }
+
+  .btn:focus, .btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(72, 255, 0, 0.25);
+  } 
+/*personalizacion ancho de fuente de las label*/
+label{
+    font-weight: bold;
+}
+
+/*personalizacion del post*/
+.post {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #999;
+}
+
+.post .post-title a {
+    color: #333;
+}
+
+.post .thumb {
+    margin-right: 10px;
+    width: 40%;
+}
+
+.post .thumb img {
+    width: 100%;
+}
+
+/*Personalizacion de los colores del list-group*/
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/*Personalizacion de los colores de los a*/
+a {
+    color:#28a745
+}
+
+a:hover{
+    color:#18682b
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #28a745;
+  }
+
+/*Personalizacion de los colores de la paginacion*/
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #28a745;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.page-link:hover {
+    z-index: 2;
+    color: #18682b;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+  }
+  
+  .page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(72, 255, 0, 0.25);
+  }
+  .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+
+footer {
+    background: #28a74621;
+    text-align: center;
+    padding: 5px;
+}
+
+footer p {
+    margin: 0;
+    
+}

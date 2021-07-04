@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "dash-horizon";
+    src: url("../style/font/dash-horizon.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: ghostwhite;
+    color: black;
+    font-family: "dash-horizon";
+}
+
+.header{
+    font-size: 50px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.redgrid{
+    width: 98%;
+    border: 10px solid navy;
+    margin: auto;
+    font-size:  50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.redgrid > div {
+    display: block;
+    padding: 5px;
+    color: ivory;
+    background: steelblue;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .25);
+}
+
+
+
+.redgrid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:    "header header  header  header  header  header   header  header  header  header  header  header"
+                            "aside  aside   panel   panel   panel   panel    panel   panel   panel   panel   panel   panel"
+                            "aside  aside   panel   panel   panel   panel    panel   panel   panel   panel   panel   panel"
+                            "aside  aside   panel   panel   panel   panel    panel   panel   panel   panel   panel   panel"
+                            "aside  aside   footer  footer  footer  footer   footer  footer  footer  footer  footer  footer"
+                            "end  end   end   end   end   end    end   end   end   end   end   end";
+}
+
+.redgrid .header{
+    background: royalblue;
+    grid-area:  header;
+}
+
+.redgrid .aside{
+    background: yellowgreen;
+    grid-area: aside;
+}
+
+.redgrid .panel{
+    background: silver;
+    grid-area: panel;
+}
+
+.redgrid .footer{
+    background: orange;
+    grid-area: footer;
+}
+
+.redgrid .end{
+    background: green;
+    grid-area: end;
+}
+
+
+
+
+
+
+
+.redgrid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-areas:    "header     header      header      header      header      header       header      header      header      header      header      header"
+                            "wallpaper  wallpaper   wallpaper   wallpaper   wallpaper   wallpaper    wallpaper   wallpaper   wallpaper   wallpaper   wallpaper   wallpaper"
+                            "wallpaper  wallpaper   wallpaper   wallpaper   wallpaper   wallpaper    wallpaper   wallpaper   wallpaper   wallpaper   wallpaper   wallpaper"
+                            "wallpaper  wallpaper   wallpaper   wallpaper   wallpaper   wallpaper    wallpaper   wallpaper   wallpaper   wallpaper   wallpaper   wallpaper"
+                            "wallpaper  wallpaper   wallpaper   wallpaper   wallpaper   wallpaper    wallpaper   wallpaper   wallpaper   wallpaper   wallpaper   wallpaper"
+                            "wallpaper  wallpaper   wallpaper   wallpaper   wallpaper   wallpaper    wallpaper   wallpaper   wallpaper   wallpaper   wallpaper   wallpaper"
+                            "wallpaper  wallpaper   wallpaper   wallpaper   wallpaper   wallpaper    wallpaper   wallpaper   wallpaper   wallpaper   wallpaper   wallpaper"
+                            "welcome    welcome     welcome     welcome     welcome     welcome      welcome     welcome     welcome     welcome     welcome     welcome"
+                            "welcome    welcome     welcome     welcome     welcome     welcome      welcome     welcome     welcome     welcome     welcome     welcome"
+                            "welcome    welcome     welcome     welcome     welcome     welcome      welcome     welcome     welcome     welcome     welcome     welcome"
+                           "service1   service1    service1    service1    service1    service1     service2    service2    service2    service2    service2    service2"
+                           "service1   service1    service1    service1    service1    service1     service2    service2    service2    service2    service2    service2"
+                           "service1   service1    service1    service1    service1    service1     service2    service2    service2    service2    service2    service2"
+                           "service1   service1    service1    service1    service1    service1     service2    service2    service2    service2    service2    service2"
+                            "parallax   parallax    parallax    parallax    parallax    parallax     parallax    parallax    parallax    parallax    parallax   parallax"
+                            "parallax   parallax    parallax    parallax    parallax    parallax     parallax    parallax    parallax    parallax    parallax   parallax"
+                            "parallax   parallax    parallax    parallax    parallax    parallax     parallax    parallax    parallax    parallax    parallax   parallax"
+                            "parallax   parallax    parallax    parallax    parallax    parallax     parallax    parallax    parallax    parallax    parallax   parallax"
+                            "support  support   support   support   support   support    support   support   support   support   support   support"
+                            "support  support   support   support   support   support    support   support   support   support   support   support"
+                            "support  support   support   support   support   support    support   support   support   support   support   support"
+                            "support  support   support   support   support   support    support   support   support   support   support   support"
+                            "support  support   support   support   support   support    support   support   support   support   support   support"
+                            "taskforce  taskforce   taskforce   taskforce   taskforce   taskforce    taskforce   taskforce   taskforce   taskforce   taskforce   taskforce"
+                            "taskforce  taskforce   taskforce   taskforce   taskforce   taskforce    taskforce   taskforce   taskforce   taskforce   taskforce   taskforce"
+                            "taskforce  taskforce   taskforce   taskforce   taskforce   taskforce    taskforce   taskforce   taskforce   taskforce   taskforce   taskforce"
+                            "taskforce  taskforce   taskforce   taskforce   taskforce   taskforce    taskforce   taskforce   taskforce   taskforce   taskforce   taskforce"
+                            "footer  footer   footer   footer   footer   footer    footer   footer   footer   footer   footer   footer"
+                            "footer  footer   footer   footer   footer   footer    footer   footer   footer   footer   footer   footer"
+                            "end  end   end   end   end   end    end   end   end   end   end   end";
+}
+
+
+.redgrid .header{
+    background: navy;
+    grid-area: header;
+}
+
+.redgrid .wallpaper{
+    background: silver;
+    grid-area: wallpaper;
+}
+
+.redgrid .welcome{
+    background: red;
+    grid-area: welcome;
+}
+
+.redgrid .service1{
+    background: indigo;
+    grid-area: service1;
+}
+
+.redgrid .service2{
+    background: purple;
+    grid-area: service2;
+}
+
+.redgrid .parallax{
+    background: steelblue;
+    grid-area: parallax;
+}
+
+.redgrid .support{
+    background: rgb(58, 58, 112);
+    grid-area: support;
+}
+
+.redgrid .taskforce{
+    background: slateblue;
+    grid-area: taskforce;
+}
+.redgrid .footer{
+    background: yellow;
+    grid-area: footer;
+}
+
+.redgrid .end{
+    background: orangered;
+    grid-area: end;
+}

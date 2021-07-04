@@ -1,0 +1,174 @@
+ /*/*Fuentes*/
+ @import 'https://fonts.googleapis.com/css?family=Lora:700i'; /*Header*/
+ @import 'https://fonts.googleapis.com/css?family=Merriweather'; /*Títulos*/
+ @import 'https://fonts.googleapis.com/css?family=Open+Sans:300'; /*Subtítulos*/
+ 
+ 
+ body{
+     padding-top: 70px;
+ }
+ 
+ footer{
+     background-color: #B7254E;
+     color: white;
+ }
+ 
+ /*Los botones dentro de una font: ;ma*/
+ form > button{
+     width: 50%;
+     background-color: #5A1741 !important;
+     text-align: left !important;
+ }
+ 
+ /*ids*/
+ 
+ 
+ #copyrights{
+     padding-top: 25px;
+ }
+ 
+ #futer{
+     padding-top: 25px;
+     padding-bottom: 25px;
+ }
+ 
+ #textfield{
+     height: 150px;
+ }
+ 
+ #proyectos{
+     background-color: #5A1741;
+     color: white;
+ }
+ 
+ #id-quienes{
+     color: white;
+     background-color: #5A1741;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+ 
+ #imagen-fondo{
+     position: relative;;
+     z-index: -1;
+ }
+ 
+ #logo{
+     width: 13em;
+ }
+ 
+ #contacto-desc{
+     color: #692C52;
+     font-weight: bold;
+ }
+ 
+ #pasion-div{
+     background-image: url("media/portada-mejor.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ 
+     min-height: 650px;
+     padding: 13px;
+ 
+     font-size: 1.2em;
+ 
+     /*Para que se centre el texto*/
+     display: table;
+     width: 100%;
+ }
+ 
+ #pasion-div > div{
+     display: table-cell;
+     vertical-align: middle;
+     text-align: center;
+ }
+ 
+ #pasion-texto{
+     font-family: 'Lora', serif;
+     color: white;
+     font-size: 3em;
+     /*width: 400px;*/
+ }
+ 
+ #quienes{
+     background-color: #5A1741;
+     height: 200px;
+ }
+ 
+ /*clases*/
+ 
+ .ch{
+     font-weight: bold;
+     color: #5A1741;
+ }
+ 
+ .cs{
+     color: #5A1741;
+     color: #B7254E;
+ }
+ 
+ .navbar-nav{
+     background-color: white;
+     font-weight: bold;
+ }
+ 
+ .navbar-nav {
+     display:table;
+     width:100%;
+     margin: 0;
+     color: #B7254E;
+ }
+ .navbar-nav > li {
+     float:none;
+     display:table-cell;
+     text-align:center;
+     
+ }
+ 
+ .navbar a{
+     color: #B7254E !important;
+ }
+ 
+ .barraRosa-nav{
+     width: 100%;
+     height: 45px;
+     background-color: #B7254E;
+ }
+ 
+ .barraRosa{
+     width: 100%;
+     height: 5px;
+     background-color: #B7254E;
+ }
+ 
+ .barraRosa-negra{
+     width: 100%;
+     height: 5px;
+     background-color: #5A1741
+ }
+ 
+ .hacemos-descripciones{
+     color: #B7254E;
+ }
+ 
+ .hacemos-headers{
+     color: #5A1741;
+ }
+ 
+ .fuente-merri{
+     font-family: 'Merriweather', serif;
+ }
+ 
+ .fuente-sans{
+     font-family: 'Open Sans', sans-serif;
+ }
+ 
+ /*Posicionar verticalmente en el centro*/   
+ .vertical-align {
+     vertical-align: middle;
+     display: inline-block;
+ }
+ 
+ .form-group > input{
+     width: 50%;
+ }

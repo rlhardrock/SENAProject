@@ -17,9 +17,9 @@ $service = $_POST["service"];
 $settlement = $_POST["settlement"];
 
 
-$insert_query = "INSERT INTO vehicles(mark,model,bodywork,manufacturing,enrollment,license,paint,cylinder,transmission,motor,suspension,service,settlement) VALUES ('$mark','$model','$bodywork','$manufacturing','$enrollment','UPPER('$license')','$paint','$cylinder','$transmission','$motor','$suspension','$service','$settlement')";
+$insert_auto = "INSERT INTO vehicles(mark,model,bodywork,manufacturing,enrollment,license,paint,cylinder,transmission,motor,suspension,service,settlement) VALUES ('$mark','$model','$bodywork','$manufacturing','$enrollment','UPPER('$license')','$paint','$cylinder','$transmission','$motor','$suspension','$service','$settlement')";
 
-$result = mysqli_query($connection,$insert_query);
+$result = mysqli_query($connection,$insert_auto);
 
 if ($result) {
     echo "<script>alert('Vehicle Added Successfully');

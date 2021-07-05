@@ -56,6 +56,7 @@ mysqli_close($connection);
                         <th scope="col">Suspension</th>
                         <th scope="col">Service</th>
                         <th scope="col">Settlement</th>
+
                         <th scope="col">Update!</th>
                         <th scope="col">Scrap!</th>
 

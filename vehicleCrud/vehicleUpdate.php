@@ -2,7 +2,7 @@
 
 require "../models/connectionDatabase.php";
 
-$objConnection = Connect();
+/* $objConnection = Connect(); */
 $id = $_GET["id_vehicle"];
 $update_vehicle="SELECT * FROM vehicles WHERE id_vehicle='$id'";
 mysqli_close($connection);

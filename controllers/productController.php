@@ -1,13 +1,13 @@
 <?php
 
 
-    $vehicle = new Vehicle();
+    $product = new Product();
 
     $arguments = (!empty($_POST['motion']) ? $_POST['motion'] : $_GET['motion']);
 
     switch ($arguments) {
-        case 'Build Vehicle':
-                return ($vehicle->addVehicle($_POST));
+        case 'Build Product':
+                return ($product->addProduct($_POST));
             break;
 
         default:

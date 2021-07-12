@@ -23,7 +23,7 @@ $result = mysqli_query($connection,$insert_auto);
 
 if ($result) {
     echo "<script>alert('Vehicle Added Successfully');
-    window.location='../views/dashboard.html'</script>";
+    window.location='../views/dashboard.php'</script>";
 } else {
     echo "<script>alert('Unregistered Vehicle, Try Again');
     window.history.go(-1)</script>";

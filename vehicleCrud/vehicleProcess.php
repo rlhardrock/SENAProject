@@ -2,7 +2,7 @@
 
 require '../models/connectionDatabase.php';
 
-$id = $_POST["id"];
+$id = $_POST["id_vehicle"];
 $mark = $_POST["mark"];
 $model = $_POST["model"];
 $bodywork = $_POST["bodywork"];
@@ -17,13 +17,13 @@ $suspension = $_POST["suspension"];
 $service = $_POST["service"];
 $settlement = $_POST["settlement"];
 
-$update_auto = "UPDATE vehicles SET mark=$mark',model='$model',bodywork='$bodywork',manufacturing='$manufacturing',enrollment='$enrollment',license='UPPER('$license')',paint='$paint',cylinder='$cylinder',transmission='$transmission',motor='$motor',suspension='$suspension',service='$service',settlement='$settlement' WHERE id_vehicle='$id' ";
+$update_auto = "UPDATE vehicles SET mark=$mark',model='$model',bodywork='$bodywork',manufacturing='$manufacturing',enrollment='$enrollment',license='UPPER('$license')',paint='$paint',cylinder='$cylinder',transmission='$transmission',motor='$motor',suspension='$suspension',service='$service',settlement='$settlement' WHERE id_vehicle='$id_vehicle' ";
 
 $result = mysqli_query($connection,$update_auto);
 
 if ($result) {
     echo "<script>alert('Vehicle Updated Successfully');
-    window.location='../views/dashboard.html'</script>";
+    window.location='../views/dashboard.php'</script>";
 } else {
     echo "<script>alert('Vehicle Not Updated, Try Again');
     window.history.go(-1)</script>";

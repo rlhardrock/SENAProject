@@ -69,7 +69,7 @@ mysqli_free_result($result);
 
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
+                        <td><?php echo $row["id_vehicle"]; ?></td>
                         <td><?php echo $row["mark"]; ?></td>
                         <td><?php echo $row["model"]; ?></td>
                         <td><?php echo $row["bodywork"]; ?></td>

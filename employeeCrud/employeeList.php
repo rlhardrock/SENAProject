@@ -7,8 +7,7 @@ $employees = "SELECT * FROM employees";
 $result = mysqli_query($connection,$employees);
 $AllEmployees = mysqli_num_rows($result); //optional
 mysqli_free_result($result);
-mysqli_close($connection);
-
+/* mysqli_close($connection); */
 ?>
 
 <!DOCTYPE html>

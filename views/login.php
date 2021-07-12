@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -44,18 +45,17 @@
               </div>
             </div>
             <div class="row mb-3">
-              <button type="submit" class="btn btn-primary">Sign In</button>
+              <button type="submit" class="btn btn-primary" >Sign In</button>
             </div>
           </form>
           
         </div>
         
         <div class="col-1  point">
-          <button type="submit" class="btn btn-warning" onclick="location.href='../main.html'">HOME</button>
+          <button type="submit" class="btn btn-warning" onclick="location.href='../main.php'">HOME</button>
         </div>
-        <br><br>
         <div class="col-1  point">
-          <button type="submit" class="btn btn-warning" onclick="location.href='../views/dashboard.html'">cuando el log este funcional hara esta accion</button>
+          <button type="submit" class="btn btn-light" onclick="location.href='../views/dashboard.php'">DASHBOARD</button>
         </div>
       </section>
     </div>

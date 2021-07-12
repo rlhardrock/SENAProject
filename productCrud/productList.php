@@ -7,7 +7,7 @@ $products = "SELECT * FROM products";
 $result = mysqli_query($connection,$products);
 $AllProducts = mysqli_num_rows($result); //optional
 mysqli_free_result($result);
-mysqli_close($connection);
+/* mysqli_close($connection); */
 
 ?>
 

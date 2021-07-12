@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon -->
-  <link rel="shortcut icon" href="../img/favicon.png">
+  <link rel="shortcut icon" href="./img/favicon.png">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../style/master.css">
+  <link rel="stylesheet" href="./style/master.css">
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>SENA ADSI</title>
@@ -45,7 +46,7 @@
       <div class="container-header">
         <div class="logobusi-header">
           <div class="container-logo">
-            <img src="../img/favicon.png" alt="">
+            <img src="./img/favicon.png" alt="">
           </div>
           <div class="container-business">
             <h1 class="main-title">AUTOWORKSHOP</h1>
@@ -60,14 +61,14 @@
               <li class="btn-nav item-nav select"><a href="#">HOME</a></li>
               <li class="btn-nav item-nav"><a href="#">AUTO</a></li>
               <li class="btn-nav item-nav"><a href="#">SERVICES</a></li>
-              <li class="btn-nav item-nav"><a href="../views/products.html">PRODUCTS</a></li>
+              <li class="btn-nav item-nav"><a href="./views/products.php">PRODUCTS</a></li>
               <li class="btn-nav item-nav"><a href="#connect-us">CONTACT</a></li>
             </ul>
           </nav>
         </div>
         <div>
           <button type="button" class="btn btn-neon btn-outline-success"
-            onclick="location.href='../views/login.html'">LOGIN</button>
+            onclick="location.href='./views/login.php'">LOGIN</button>
         </div>
       </div>
     </header>
@@ -133,35 +134,35 @@
     <section class="design-perfor">
       <div class="design-item">
         <h2 class="design-title">MOTOR</h2>
-        <img class="design-img" src="../img/system/system01.jpg" alt="">
+        <img class="design-img" src="./img/system/system01.jpg" alt="">
       </div>
       <div class="design-item">
         <h2 class="design-title">ELECTRONIC</h2>
-        <img class="design-img" src="../img/system/system02.jpg" alt="">
+        <img class="design-img" src="./img/system/system02.jpg" alt="">
       </div>
       <div class="design-item">
         <h2 class="design-title">BRAKES</h2>
-        <img class="design-img" src="../img/system/system09.jpg" alt="">
+        <img class="design-img" src="./img/system/system09.jpg" alt="">
       </div>
       <div class="design-item">
         <h2 class="design-title">TRANSMISSION</h2>
-        <img class="design-img" src="../img/system/system04.jpg" alt="">
+        <img class="design-img" src="./img/system/system04.jpg" alt="">
       </div>
       <div class="design-item">
         <h2 class="design-title">DIRECTION</h2>
-        <img class="design-img" src="../img/system/system05.jpg" alt="">
+        <img class="design-img" src="./img/system/system05.jpg" alt="">
       </div>
       <div class="design-item">
         <h2 class="design-title">SUSPENSION</h2>
-        <img class="design-img" src="../img/system/system06.jpg" alt="">
+        <img class="design-img" src="./img/system/system06.jpg" alt="">
       </div>
       <div class="design-item">
         <h2 class="design-title">SAFETY</h2>
-        <img class="design-img" src="../img/system/system07.jpg" alt="">
+        <img class="design-img" src="./img/system/system07.jpg" alt="">
       </div>
       <div class="design-item">
         <h2 class="design-title">COMFORT</h2>
-        <img class="design-img" src="../img/system/system08.jpg" alt="">
+        <img class="design-img" src="./img/system/system08.jpg" alt="">
       </div>
     </section>
 
@@ -176,19 +177,19 @@
               <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="4000">
-                    <img src="../img/avenger/task01.png" class="d-block">
+                    <img src="./img/avenger/task01.png" class="d-block">
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
-                    <img src="../img/avenger/task02.png" class="d-block">
+                    <img src="./img/avenger/task02.png" class="d-block">
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
-                    <img src="../img/avenger/task06.png" class="d-block">
+                    <img src="./img/avenger/task06.png" class="d-block">
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
-                    <img src="../img/avenger/task32.png" class="d-block">
+                    <img src="./img/avenger/task32.png" class="d-block">
                   </div>
                   <div class="carousel-item" data-bs-interval="4000">
-                    <img src="../img/avenger/task99.png" class="d-block">
+                    <img src="./img/avenger/task99.png" class="d-block">
                   </div>
                 </div>
               </div>
@@ -290,7 +291,7 @@
     <div class="container-card">
       <div class="card">
         <div class="card-img">
-          <img src="../img/avenger/task181.png" class="" alt="...">
+          <img src="./img/avenger/task181.png" class="" alt="...">
         </div>
         <div class="card-description">
           <h5 class="card-title">Elizabeth Ilyushin</h5>
@@ -305,7 +306,7 @@
 
       <div class="card">
         <div class="card-img">
-          <img src="../img/avenger/task136.png" class="" alt="...">
+          <img src="./img/avenger/task136.png" class="" alt="...">
         </div>
         <div class="card-description">
           <h5 class="card-title">Svetlana Sujoi</h5>
@@ -320,7 +321,7 @@
 
       <div class="card">
         <div class="card-img">
-          <img src="../img/avenger/task107.png" class="" alt="...">
+          <img src="./img/avenger/task107.png" class="" alt="...">
         </div>
         <div class="card-description">
           <h5 class="card-title">Ekaterine Antonov</h5>
@@ -335,7 +336,7 @@
 
       <div class="card">
         <div class="card-img">
-          <img src="../img/avenger/task25.png" class="" alt="...">
+          <img src="./img/avenger/task25.png" class="" alt="...">
         </div>
         <div class="card-description">
           <h5 class="card-title">Natasha Mikoyan</h5>
@@ -350,7 +351,7 @@
 
       <div class="card">
         <div class="card-img">
-          <img src="../img/avenger/task26.png" class="" alt="...">
+          <img src="./img/avenger/task26.png" class="" alt="...">
         </div>
         <div class="card-description">
           <h5 class="card-title">Nikita Myasishchev</h5>

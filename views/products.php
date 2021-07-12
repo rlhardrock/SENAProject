@@ -1,10 +1,11 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="./style/main.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="../img/favicon.png">
     <!-- Bootstrap CSS -->
@@ -31,7 +32,7 @@
           </div>
           <div class="col-2" style="background-color: #ccc">
             <br>
-            <button type="submit" class="btn btn-success" onclick="location.href='../main.html'">MAIN</button>
+            <button type="submit" class="btn btn-success" onclick="location.href='../main.php'">MAIN</button>
             <br><br>
           </div>
         </div>
@@ -41,19 +42,19 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../img/automotor/automotor01.jpg" class="d-block w-100" height="650px" alt="..." />
+          <img src="../img/automotor/automotor01.jpg" class="d-block w-100" height="650px" />
         </div>
         <div class="carousel-item">
-          <img src="../img/automotor/automotor02.jpg" class="d-block w-100" height="650px" alt="..." />
+          <img src="../img/automotor/automotor02.jpg" class="d-block w-100" height="650px" />
         </div>
         <div class="carousel-item">
-          <img src="../img/automotor/automotor03.jpg" class="d-block w-100" height="650px" alt="..." />
+          <img src="../img/automotor/automotor03.jpg" class="d-block w-100" height="650px" />
         </div>
         <div class="carousel-item">
-          <img src="../img/automotor/automotor04.jpg" class="d-block w-100" height="650px" alt="..." />
+          <img src="../img/automotor/automotor04.jpg" class="d-block w-100" height="650px" />
         </div>
         <div class="carousel-item">
-          <img src="../img/automotor/automotor05.jpg" class="d-block w-100" height="650px" alt="..." />
+          <img src="../img/automotor/automotor05.jpg" class="d-block w-100" height="650px" />
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -94,7 +95,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
-            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top" alt="...">
+            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -103,7 +104,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top" alt="...">
+            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -112,7 +113,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top" alt="...">
+            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -121,7 +122,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="../img/tyre.jpeg" weight="150px" height="350px"  class="card-img-top" alt="...">
+            <img src="../img/tyre.jpeg" weight="150px" height="350px"  class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -130,7 +131,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top" alt="...">
+            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -139,7 +140,7 @@
         </div>
         <div class="col">
           <div class="card">
-            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top" alt="...">
+            <img src="../img/tyre.jpeg"  weight="150px" height="350px"  class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -166,8 +167,3 @@
     ></script>
   </body>
 </html>
-
-
-<!-- <Directory /var/www/html/wordpress/>
-        AllowOverride All
-</Directory> -->

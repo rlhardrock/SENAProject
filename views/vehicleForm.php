@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,12 +27,12 @@
         <div class="col-2" style="background-color: #bbb">
           <br>
           <button type="button" class="btn btn-primary"
-            onclick="location.href='../views/dashboard.html'">DASHBOARD</button>
+            onclick="location.href='../views/dashboard.php'">DASHBOARD</button>
           <br>
         </div>
         <div class="col-2" style="background-color: #ccc">
           <br>
-          <button type="button" class="btn btn-danger" onclick="location.href='../main.html'">LOGOUT</button>
+          <button type="button" class="btn btn-danger" onclick="location.href='../main.php'">LOGOUT</button>
           <br>
         </div>
       </div>

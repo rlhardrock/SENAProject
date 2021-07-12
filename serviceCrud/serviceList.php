@@ -7,7 +7,7 @@ $services = "SELECT * FROM services";
 $result = mysqli_query($connection,$services);
 $AllServices = mysqli_num_rows($result); //optional
 mysqli_free_result($result);
-mysqli_close($connection);
+/* mysqli_close($connection); */
 
 ?>
 

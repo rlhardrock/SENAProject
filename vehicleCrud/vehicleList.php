@@ -7,7 +7,7 @@ $vehicles = "SELECT * FROM vehicles";
 $result = mysqli_query($connection,$vehicles);
 $AllVehicles = mysqli_num_rows($result); //optional
 mysqli_free_result($result);
-mysqli_close($connection);
+/* mysqli_close($connection); */
 
 ?>
 
@@ -65,7 +65,7 @@ mysqli_close($connection);
             <?php
                 $autos = mysqli_query($connection,$vehicles);
                 while ($row = mysqli_fetch_assoc($autos))
-            {?>
+            { ?>
 
                 <tbody>
                     <tr>
@@ -83,8 +83,8 @@ mysqli_close($connection);
                         <td><?php echo $row["suspension"]; ?></td>
                         <td><?php echo $row["service"]; ?></td>
                         <td><?php echo $row["settlement"]; ?></td>
-                        <td><a href="../vehicleCrud/vehicleUpdate.php?id_vehicle= <?php echo $row["id_vehicle"];?> "class="safety">U<i class="fas fa-cogs"></i></a></td>
-                        <td><a href="../vehicleCrud/vehicleScrap.php?id_vehicle= <?php echo $row["id_vehicle"];?>" class="safety">S<i class="fas fa-snowplow"></i></a>"></td>
+                        <td><a href="../vehicleCrud/vehicleUpdate.php?id_vehicle= <?php echo $row["id_vehicle"];?> "class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../vehicleCrud/vehicleScrap.php?id_vehicle= <?php echo $row["id_vehicle"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>
             <?php

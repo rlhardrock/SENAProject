@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,7 @@
                         <p class="botones">
                             <button type="button" class="pulse" onclick="location.href='../vehicleCrud/vehicleList.php'">LIST</button>
                             <br>
-                            <button type="button" class="pulse" onclick="location.href='../views/vehicleForm.html'">
+                            <button type="button" class="pulse" onclick="location.href='../views/vehicleForm.php'">
                                 INSCRIPTION
                             </button>
                         </p>
@@ -55,7 +56,7 @@
                             <button type="button" class="pulse" onclick="location.href='../clientCrud/clientList.php'">LIST</button>
                             <br>
                             <br>
-                            <button type="button" class="pulse" onclick="location.href='../views/clientForm.html'">
+                            <button type="button" class="pulse" onclick="location.href='../views/clientForm.php'">
                               INSCRIPTION
                             </button></p>
                         <div class="background-hover"></div>
@@ -72,7 +73,7 @@
                             <button type="button" class="pulse" onclick="location.href='../productCrud/productList.php'">LIST</button>
                             <br>
                             <br>
-                            <button type="button" class="pulse" onclick="location.href='../views/productForm.html'">
+                            <button type="button" class="pulse" onclick="location.href='../views/productForm.php'">
                               INSCRIPTION
                             </button></p>
                         <div class="background-hover"></div>
@@ -89,7 +90,7 @@
                             <button type="button" class="pulse" onclick="location.href='../serviceCrud/serviceList.php'">LIST</button>
                             <br>
                             <br>
-                            <button type="button" class="pulse" onclick="location.href='../views/serviceForm.html'">
+                            <button type="button" class="pulse" onclick="location.href='../views/serviceForm.php'">
                               INSCRIPTION
                             </button></p>
                         <div class="background-hover"></div>
@@ -106,7 +107,7 @@
                             <button type="button" class="pulse" onclick="location.href='../employeeCrud/employeeList.php'">LIST</button>
                             <br>
                             <br>
-                            <button type="button" class="pulse" onclick="location.href='../views/employeeForm.html'">
+                            <button type="button" class="pulse" onclick="location.href='../views/employeeForm.php'">
                               INSCRIPTION
                             </button></p>
                         <div class="background-hover"></div>
@@ -120,7 +121,7 @@
                         <i class="fas fa-file-invoice-dollar icon"></i>
                         <h4 class="title">BILLS</h4>
                         <p class="botones">
-                            <button type="button" class="btn btn-warning" onclick="location.href='../views/billInvoice.html'">BUILD</button>
+                            <button type="button" class="btn btn-warning" onclick="location.href='../views/billInvoice.php'">BUILD</button>
                             <br>
                             <button type="button" class="btn btn-warning">LIST</button></p>
                         <div class="background-hover"></div>

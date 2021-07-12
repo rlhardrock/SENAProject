@@ -7,7 +7,7 @@ $clients = "SELECT * FROM clients";
 $result = mysqli_query($connection,$clients);
 $AllClients = mysqli_num_rows($result); //optional
 mysqli_free_result($result);
-mysqli_close($connection);
+/* mysqli_close($connection); */
 
 ?>
 

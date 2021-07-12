@@ -67,7 +67,7 @@ mysqli_free_result($result);
 
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
+                        <td><?php echo $row["id_product"]; ?></td>
                         <td><?php echo $row["product_name"]; ?></td>
                         <td><?php echo $row["factory_serial"]; ?></td>
                         <td><?php echo $row["brand"]; ?></td>
@@ -80,8 +80,8 @@ mysqli_free_result($result);
                         <td><?php echo $row["price"]; ?></td>
                         <td><?php echo $row["register"]; ?></td>
 
-                        <td><a href="../productCrud/productUpdate.php?id_product= <?php echo $row["id_product"];?> "class="safety">U<i class="fas fa-cogs"></i></a></td>
-                        <td><a href="../productCrud/productScrap.php?id_product= <?php echo $row["id_product"];?>" class="safety">S<i class="fas fa-snowplow"></i></a>"></td>
+                        <td><a href="../productCrud/productUpdate.php?id_product= <?php echo $row["id_product"];?> "class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../productCrud/productScrap.php?id_product= <?php echo $row["id_product"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>
             <?php

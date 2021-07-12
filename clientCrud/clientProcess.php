@@ -2,7 +2,7 @@
 
 require '../models/connectionDatabase.php';
 
-$id = $_POST["id"];
+$id = $_POST["id_client"];
 $citizen_number = $_POST["citizen_number"];
 $name = $_POST["name"];
 $surname = $_POST["surname"];
@@ -13,7 +13,7 @@ $business = $_POST["business"];
 $inscription = $_POST["inscription"];
 
 
-$update_client = "UPDATE clients SET citizen_number=$citizen_number',name='$name',surname='$surname',email='$email',phone_number='$phone_number',profession='$profession',business='$business',inscription='$inscription' WHERE id_client='$id' ";
+$update_client = "UPDATE clients SET citizen_number=$citizen_number',name='$name',surname='$surname',email='$email',phone_number='$phone_number',profession='$profession',business='$business',inscription='$inscription' WHERE id_client='$id_client' ";
 
 $result = mysqli_query($connection,$update_client);
 

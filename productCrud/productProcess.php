@@ -2,7 +2,7 @@
 
 require '../models/connectionDatabase.php';
 
-$id = $_POST["id"];
+$id = $_POST["id_product"];
 $product_name = $_POST["product_name"];
 $factory_serial = $_POST["factory_serial"];
 $brand = $_POST["brand"];
@@ -15,13 +15,13 @@ $warranty = $_POST["warranty"];
 $price = $_POST["price"];
 $register = $_POST["register"];
 
-$update_autoparts = "UPDATE products SET product_name=$product_name',factory_serial='$factory_serial',brand='$brand',technology='$technology',weather='$weather',bodywork='$bodywork',category='$category',highway='$highway',warranty='$warranty',price='$price',register='$register' WHERE id_product='$id' ";
+$update_autoparts = "UPDATE products SET product_name=$product_name',factory_serial='$factory_serial',brand='$brand',technology='$technology',weather='$weather',bodywork='$bodywork',category='$category',highway='$highway',warranty='$warranty',price='$price',register='$register' WHERE id_product='$id_product' ";
 
 $result = mysqli_query($connection,$update_autoparts);
 
 if ($result) {
     echo "<script>alert('Product Updated Successfully');
-    window.location='../views/dashboard.html'</script>";
+    window.location='../views/dashboard.php'</script>";
 } else {
     echo "<script>alert('Product Not Updated, Try Again');
     window.history.go(-1)</script>";

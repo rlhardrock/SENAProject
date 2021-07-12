@@ -20,7 +20,7 @@ $result = mysqli_query($connection,$insert_query);
 
 if ($result) {
     echo "<script>alert('Product Added Successfully');
-    window.location='../views/dashboard.html'</script>";
+    window.location='../views/dashboard.php'</script>";
 } else {
     echo "<script>alert('Unregistered Product, Try Again');
     window.history.go(-1)</script>";

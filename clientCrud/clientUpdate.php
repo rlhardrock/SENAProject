@@ -4,7 +4,7 @@ require "../models/connectionDatabase.php";
 
 /* $objConnection = Connect(); */
 $id = $_GET["id_client"];
-$update_client="SELECT * FROM clients WHERE id_client='$id'";
+$update_client="SELECT * FROM clients WHERE id_client='$id_client'";
 mysqli_close($connection);
 
 ?>

@@ -64,7 +64,7 @@ mysqli_free_result($result);
 
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
+                        <td><?php echo $row["id_client"]; ?></td>
                         <td><?php echo $row["citizen_number"]; ?></td>
                         <td><?php echo $row["name"]; ?></td>
                         <td><?php echo $row["surname"]; ?></td>

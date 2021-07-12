@@ -4,7 +4,7 @@
 
 $app = new App(); */
 
-$template=file_get_contents("./main.html");
+$template=file_get_contents("./views/main.php");
 print $template;
 
 ?> -->

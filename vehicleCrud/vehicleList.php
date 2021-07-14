@@ -83,8 +83,8 @@ mysqli_free_result($result);
                         <td><?php echo $row["suspension"]; ?></td>
                         <td><?php echo $row["service"]; ?></td>
                         <td><?php echo $row["settlement"]; ?></td>
-                        <td><a href="../vehicleCrud/vehicleUpdate.php?id_vehicle= <?php echo $row["id_vehicle"];?> "class="safety"><i class="fas fa-cogs"></i></a></td>
-                        <td><a href="../vehicleCrud/vehicleScrap.php?id_vehicle= <?php echo $row["id_vehicle"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
+                        <td><a href="../vehicleCrud/vehicleUpdate.php?id_vehicle=<?php echo $row["id_vehicle"];?>" class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../vehicleCrud/vehicleScrap.php?id_vehicle=<?php echo $row["id_vehicle"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>
             <?php

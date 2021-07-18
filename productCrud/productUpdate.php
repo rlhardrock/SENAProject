@@ -29,7 +29,7 @@ $update_product="SELECT * FROM products WHERE id_product='$id_product'";
     <h1>UPDATE PRODUCT</h1>
     <br>
     <div class='container-fluid'>
-        <h2>...</h2>
+        
         <br>
         <div class='row'>
             <div class="col-md-6">

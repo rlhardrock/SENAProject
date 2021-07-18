@@ -3,9 +3,9 @@
 require "../models/connectionDatabase.php";
 
 /* $objConnection = Connect(); */
-$id = $_GET["id_service"];
-$update_service="SELECT * FROM services WHERE id_service='$id'";
-mysqli_close($connection);
+$id_service = $_GET["id_service"];
+$update_service="SELECT * FROM services WHERE id_service='$id_service'";
+
 
 ?>
 
@@ -39,22 +39,20 @@ mysqli_close($connection);
                     <?php $result = mysqli_query($connection,$update_service);
                     while($row= mysqli_fetch_assoc($result)) { ?>
 
-                    <input type="hidden"
-                    value="<?php echo $row["id_service"];?>"
-                    name="id">
+                    <input type="hidden" value="<?php echo $row["id_service"];?>" name="id_service">
 
                     <div class="mb-3">
-                        <label for="input_type_service" class="form-label">Type Service</label>
+                        <label>Type Service</label>
                         <input type="text" class="form-control" name="type_service" id="type_service" value="<?php echo $row["type_service"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_cost_service" class="form-label">Cost Service</label>
-                        <input type="text" class="form-control" name="cost_service" id="cost_service" value="<?php echo $row["cost_service"];?>" placeholder="">
+                        <label>Cost Service</label>
+                        <input type="text" class="form-control" name="cost_servicio" id="cost_servicio" value="<?php echo $row["cost_servicio"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_parking_day" class="form-label">Parking Day</label>
+                        <label>Parking Day</label>
                         <input type="text" class="form-control" name="parking_day" id="parking_day" value="<?php echo $row["parking_day"];?>" placeholder="">
                     </div>
 
@@ -62,7 +60,7 @@ mysqli_close($connection);
                         <button class="btn btn-primary" type="Submit">Update</button>
                     </div>
 
-                    <?php } mysqli_free_result($result) ?>
+                    <?php } mysqli_free_result($result); ?>
                 </form>
 
             </div>

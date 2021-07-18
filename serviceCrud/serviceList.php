@@ -18,7 +18,7 @@ mysqli_free_result($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -59,17 +59,17 @@ mysqli_free_result($result);
 
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
+                        <td><?php echo $row["id_service"]; ?></td>
                         <td><?php echo $row["type_service"]; ?></td>
-                        <td><?php echo $row["cost_service"]; ?></td>
+                        <td><?php echo $row["cost_servicio"]; ?></td>
                         <td><?php echo $row["parking_day"]; ?></td>
 
-                        <td><a href="../serviceCrud/serviceUpdate.php?id_service= <?php echo $row["id_service"];?> "class="safety">U<i class="fas fa-cogs"></i></a></td>
-                        <td><a href="../serviceCrud/serviceScrap.php?id_service= <?php echo $row["id_service"];?>" class="safety">S<i class="fas fa-snowplow"></i></a>"></td>
+                        <td><a href="../serviceCrud/serviceUpdate.php?id_service= <?php echo $row["id_service"];?> "class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../serviceCrud/serviceScrap.php?id_service= <?php echo $row["id_service"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>
             <?php
-            }   mysqli_free_result($servs)?>
+            }   mysqli_free_result($servs); ?>
 
             </thead>
             </table>
@@ -81,7 +81,3 @@ mysqli_free_result($result);
 </body>
 
 </html>
-
-private $;
-    private $;
-    private $;

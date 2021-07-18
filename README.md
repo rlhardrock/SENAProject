@@ -8,4 +8,7 @@ Datos de Vehiculos, Empleados, Clientes, Operarios, Facturas y Vales.
 abrir
 
 index.php
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd46fd25718b3e296d525223342f27d64d683f6f

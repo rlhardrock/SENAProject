@@ -2,7 +2,7 @@
 
 require '../models/connectionDatabase.php';
 
-$id = $_POST["id_vehicle"];
+$id_vehicle = $_POST["id_vehicle"];
 $mark = $_POST["mark"];
 $model = $_POST["model"];
 $bodywork = $_POST["bodywork"];
@@ -16,8 +16,9 @@ $motor = $_POST["motor"];
 $suspension = $_POST["suspension"];
 $service = $_POST["service"];
 $settlement = $_POST["settlement"];
+$citizen_number = $_POST["citizen_number"];
 
-$update_auto = "UPDATE vehicles SET mark=$mark',model='$model',bodywork='$bodywork',manufacturing='$manufacturing',enrollment='$enrollment',license='UPPER('$license')',paint='$paint',cylinder='$cylinder',transmission='$transmission',motor='$motor',suspension='$suspension',service='$service',settlement='$settlement' WHERE id_vehicle='$id_vehicle' ";
+$update_auto = "UPDATE vehicles SET mark='$mark',model='$model',bodywork='$bodywork',manufacturing='$manufacturing',enrollment='$enrollment',license='UPPER('$license')',paint='$paint',cylinder='$cylinder',transmission='$transmission',motor='$motor',suspension='$suspension',service='$service',settlement='$settlement', citizen_number='$citizen_number' WHERE id_vehicle='$id_vehicle' ";
 
 $result = mysqli_query($connection,$update_auto);
 
@@ -28,7 +29,6 @@ if ($result) {
     echo "<script>alert('Vehicle Not Updated, Try Again');
     window.history.go(-1)</script>";
 }
-mysqli_free_result($result);
-mysqli_close($connection);
-?>
 
+mysqli_free_result($result);
+/* mysqli_close($connection); */

@@ -3,9 +3,9 @@
 require "../models/connectionDatabase.php";
 
 /* $objConnection = Connect(); */
-$id = $_GET["id_vehicle"];
-$update_vehicle = "SELECT * FROM vehicles WHERE id_vehicle='$id'";
-mysqli_close($connection);
+$id_vehicle = $_GET["id_vehicle"];
+$update_vehicle = "SELECT * FROM vehicles WHERE id_vehicle='$id_vehicle'";
+/* mysqli_close($connection); */
 
 ?>
 
@@ -32,8 +32,6 @@ mysqli_close($connection);
     <br>
     <div class='container-fluid'>
         <br>
-
-        <h3>FORM</h3>
         <form method="POST" action="../vehicleCrud/vehicleProcess.php">
             <div class='row'>
                 <div class="col-md-3">
@@ -104,7 +102,7 @@ mysqli_close($connection);
 
                         <div class="mb-3">
                             <label for="input_settlement" class="form-label">Settlement</label>
-                            <input type="text" class="form-control" name="settlement" id="settlement" value="<?php echo $row["settlement"]; ?>"  disabled>
+                            <input type="date" class="form-control" name="settlement" id="settlement" value="<?php echo $row["settlement"]; ?>">
                         </div>
 
                         <div class="d-grid gap-2">
@@ -112,12 +110,12 @@ mysqli_close($connection);
                         </div>
 
                     <?php }
-                    mysqli_free_result($result) ?>
+                    mysqli_free_result($result); ?>
                 </div>
             </div>
         </form>
 
-
+        <script scr="../js/confirm.js"></script>
 
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

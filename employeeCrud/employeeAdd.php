@@ -24,6 +24,3 @@ if ($result) {
     echo "<script>alert('Unregistered Employee, Try Again');
     window.history.go(-1)</script>";
 }
-
-mysqli_close($connection);
-?>

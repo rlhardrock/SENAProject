@@ -16,8 +16,10 @@ $suspension = $_POST["suspension"];
 $service = $_POST["service"];
 $settlement = $_POST["settlement"];
 
+$citizen_number = $_POST["citizen_number"];
 
-$insert_auto = "INSERT INTO vehicles(mark,model,bodywork,manufacturing,enrollment,license,paint,cylinder,transmission,motor,suspension,service,settlement) VALUES ('$mark','$model','$bodywork','$manufacturing','$enrollment','UPPER('$license')','$paint','$cylinder','$transmission','$motor','$suspension','$service','$settlement')";
+
+$insert_auto = "INSERT INTO vehicles(mark,model,bodywork,manufacturing,enrollment,license,paint,cylinder,transmission,motor,suspension,service,settlement,citizen_number) VALUES ('$mark','$model','$bodywork','$manufacturing','$enrollment','$license','$paint','$cylinder','$transmission','$motor','$suspension','$service','$settlement','$citizen_number')";
 
 $result = mysqli_query($connection,$insert_auto);
 
@@ -28,6 +30,3 @@ if ($result) {
     echo "<script>alert('Unregistered Vehicle, Try Again');
     window.history.go(-1)</script>";
 }
-
-mysqli_close($connection);
-?>

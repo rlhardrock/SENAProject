@@ -2,7 +2,7 @@
 
 include '../models/connectionDatabase.php';
 
-$id = $_GET['id_vehicle'];
+$id_vehicle = $_GET['id_vehicle'];
 
 $scrap_junk ="DELETE FROM vehicles WHERE id_vehicle='$id_vehicle'";
 
@@ -17,6 +17,3 @@ if ($result) {
 }
 
 mysqli_free_result($result);
-mysqli_close($connection);
-
-?>

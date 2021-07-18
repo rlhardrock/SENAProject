@@ -18,7 +18,7 @@ mysqli_free_result($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -29,6 +29,30 @@ mysqli_free_result($result);
 </head>
 
 <body>
+
+
+<header>
+    <div class="centre">
+        <div class="row">
+            <div class="col-8" style="background-color: #aaa">
+                <br>
+                <h1>CLIENTS LIST</h1>
+            </div>
+            <div class="col-2" style="background-color: #bbb">
+                <br>
+                <button type="button" class="btn btn-primary" onclick="location.href='../views/dashboard.php'">DASHBOARD</button>
+                <br>
+            </div>
+            <div class="col-2" style="background-color: #ccc">
+                <br>
+                <button type="button" class="btn btn-danger" onclick="location.href='../main.php'">LOGOUT</button>
+                <br>
+            </div>
+        </div>
+</header>
+<br>
+
+
     <div class='container-fluid'>
         <br>
         <h2>
@@ -42,7 +66,7 @@ mysqli_free_result($result);
             <table class="table table-dark table-striped table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <!-- <th scope="col">#</th> -->
                         <th scope="col">Citizen Number</th>
                         <th scope="col">Name</th>
                         <th scope="col">Surname</th>
@@ -64,7 +88,7 @@ mysqli_free_result($result);
 
                 <tbody>
                     <tr>
-                        <td><?php echo $row["id_client"]; ?></td>
+                        
                         <td><?php echo $row["citizen_number"]; ?></td>
                         <td><?php echo $row["name"]; ?></td>
                         <td><?php echo $row["surname"]; ?></td>
@@ -74,12 +98,12 @@ mysqli_free_result($result);
                         <td><?php echo $row["business"]; ?></td>
                         <td><?php echo $row["inscription"]; ?></td>
 
-                        <td><a href="../clientCrud/clientUpdate.php?id_client= <?php echo $row["id_client"];?> "class="safety">U<i class="fas fa-cogs"></i></a></td>
-                        <td><a href="../clientCrud/clientScrap.php?id_client= <?php echo $row["id_client"];?>" class="safety">S<i class="fas fa-snowplow"></i></a>"></td>
+                        <td><a href="../clientCrud/clientUpdate.php?citizen_number= <?php echo $row["citizen_number"];?> "class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../clientCrud/clientScrap.php?citizen_number= <?php echo $row["citizen_number"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>
             <?php
-            }   mysqli_free_result($custom)?>
+            }   mysqli_free_result($custom); ?>
 
             </thead>
             </table>

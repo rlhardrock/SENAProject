@@ -17,7 +17,7 @@ mysqli_free_result($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -41,7 +41,7 @@ mysqli_free_result($result);
             <table class="table table-dark table-striped table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
+                        <!-- <th scope="col">#</th> -->
                         <th scope="col">Citizen Number</th>
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
@@ -51,7 +51,7 @@ mysqli_free_result($result);
                         <th scope="col">Agreement</th>
                         <th scope="col">Contract</th>
                         <th scope="col">Cancellation</th>
-                        
+
                         <th scope="col">Update!</th>
                         <th scope="col">Scrap!</th>
 
@@ -64,7 +64,6 @@ mysqli_free_result($result);
 
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
                         <td><?php echo $row["citizen_number"]; ?></td>
                         <td><?php echo $row["first_name"]; ?></td>
                         <td><?php echo $row["last_name"]; ?></td>
@@ -75,8 +74,8 @@ mysqli_free_result($result);
                         <td><?php echo $row["contract"]; ?></td>
                         <td><?php echo $row["cancellation"]; ?></td>
                         
-                        <td><a href="../employeeCrud/employeeUpdate.php?id_employee= <?php echo $row["id_employee"];?> "class="safety">U<i class="fas fa-cogs"></i></a></td>
-                        <td><a href="../employeeCrud/employeeScrap.php?id_employee= <?php echo $row["id_employee"];?>" class="safety">S<i class="fas fa-snowplow"></i></a>"></td>
+                        <td><a href="../employeeCrud/employeeUpdate.php?id_employee= <?php echo $row["id_employee"];?> "class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../employeeCrud/employeeScrap.php?id_employee= <?php echo $row["id_employee"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>
             <?php

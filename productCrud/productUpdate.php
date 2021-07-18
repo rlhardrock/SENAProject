@@ -3,9 +3,9 @@
 require "../models/connectionDatabase.php";
 
 /* $objConnection = Connect(); */
-$id = $_GET["id_product"];
-$update_product="SELECT * FROM products WHERE id_product='$id'";
-mysqli_close($connection);
+$id_product = $_GET["id_product"];
+$update_product="SELECT * FROM products WHERE id_product='$id_product'";
+
 
 ?>
 
@@ -41,62 +41,62 @@ mysqli_close($connection);
 
                     <input type="hidden"
                     value="<?php echo $row["id_product"];?>"
-                    name="id">
+                    name="id_product">
 
                     <div class="mb-3">
-                        <label for="input_product_name" class="form-label">Product</label>
+                        <label>Product</label>
                         <input type="text" class="form-control" name="product_name" id="product_name" value="<?php echo $row["product_name"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_factory_serial" class="form-label">Factory Serial</label>
+                        <label>Factory Serial</label>
                         <input type="text" class="form-control" name="factory_serial" id="factory_serial" value="<?php echo $row["factory_serial"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_brand" class="form-label">Brand</label>
+                        <label>Brand</label>
                         <input type="text" class="form-control" name="brand" id="brand" value="<?php echo $row["brand"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_technology" class="form-label">Technology</label>
+                        <label>Technology</label>
                         <input type="text" class="form-control" name="technology" id="technology" value="<?php echo $row["technology"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_weather" class="form-label">Weather</label>
+                        <label>Weather</label>
                         <input type="text" class="form-control" name="weather" id="weather" value="<?php echo $row["weather"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_bodywork" class="form-label">Bodywork</label>
+                        <label>Bodywork</label>
                         <input type="text" class="form-control" name="bodywork" id="bodywork" value="<?php echo $row["bodywork"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_category" class="form-label">Category</label>
+                        <label>Category</label>
                         <input type="text" class="form-control" name="category" id="category" value="<?php echo $row["category"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_highway" class="form-label">Highway</label>
+                        <label>Highway</label>
                         <input type="text" class="form-control" name="highway" id="highway" value="<?php echo $row["highway"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_warranty" class="form-label">Warranty</label>
+                        <label>Warranty</label>
                         <input type="text" class="form-control" name="warranty" id="warranty" value="<?php echo $row["warranty"];?>"
                         placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_price" class="form-label">Price</label>
+                        <label>Price</label>
                         <input type="text" class="form-control" name="price" id="price" value="<?php echo $row["price"];?>"
                         placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_register" class="form-label">Register</label>
+                        <label>Register</label>
                         <input type="text" class="form-control" name="register" id="register" value="<?php echo $row["register"];?>" placeholder="">
                     </div>
 
@@ -104,7 +104,7 @@ mysqli_close($connection);
                         <button class="btn btn-primary" type="Submit">Update</button>
                     </div>
 
-                    <?php } mysqli_free_result($result) ?>
+                    <?php } mysqli_free_result($result); ?>
                 </form>
 
             </div>

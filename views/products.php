@@ -32,7 +32,7 @@
           </div>
           <div class="col-2" style="background-color: #ccc">
             <br>
-            <button type="submit" class="btn btn-success" onclick="location.href='../main.php'">MAIN</button>
+            <button type="submit" class="btn btn-success" onclick="location.href='./main.php'">MAIN</button>
             <br><br>
           </div>
         </div>

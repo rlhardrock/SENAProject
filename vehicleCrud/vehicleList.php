@@ -2,12 +2,12 @@
 
 require '../models/connectionDatabase.php';
 
-/* $objConnection = Connect(); */ //optional
+
 $vehicles = "SELECT * FROM vehicles";
-$result = mysqli_query($connection,$vehicles);
+$result = mysqli_query($connection, $vehicles);
 $AllVehicles = mysqli_num_rows($result); //optional
 mysqli_free_result($result);
-/* mysqli_close($connection); */
+
 
 ?>
 
@@ -18,7 +18,7 @@ mysqli_free_result($result);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome -->>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -29,10 +29,34 @@ mysqli_free_result($result);
 </head>
 
 <body>
+
+
+    <header>
+        <div class="centre">
+            <div class="row">
+                <div class="col-8" style="background-color: #aaa">
+                    <br>
+                    <h1>VEHICLES LIST</h1>
+                </div>
+                <div class="col-2" style="background-color: #bbb">
+                    <br>
+                    <button type="button" class="btn btn-primary" onclick="location.href='../views/dashboard.php'">DASHBOARD</button>
+                    <br>
+                </div>
+                <div class="col-2" style="background-color: #ccc">
+                    <br>
+                    <button type="button" class="btn btn-danger" onclick="location.href='../main.php'">LOGOUT</button>
+                    <br>
+                </div>
+            </div>
+    </header>
+    <br>
+
+
     <div class='container-fluid'>
         <br>
         <h2>
-            <?php   echo "All Registered Vehicles are: " . $AllVehicles;    ?>
+            <?php echo "All Registered Vehicles are: " . $AllVehicles;    ?>
         </h2>
         <br>
 
@@ -46,15 +70,15 @@ mysqli_free_result($result);
                         <th scope="col">Mark</th>
                         <th scope="col">Model</th>
                         <th scope="col">Bodywork</th>
-                        <th scope="col">Manufacturing</th>
+                        <!-- <th scope="col">Manufacturing</th> -->
                         <th scope="col">Enrollment</th>
                         <th scope="col">License</th>
                         <th scope="col">Paint</th>
-                        <th scope="col">Cylinder</th>
+                        <!-- <th scope="col">Cylinder</th> -->
                         <th scope="col">Transmission</th>
                         <th scope="col">Motor</th>
                         <th scope="col">Suspension</th>
-                        <th scope="col">Service</th>
+                        <!-- <th scope="col">Service</th> -->
                         <th scope="col">Settlement</th>
 
                         <th scope="col">Update!</th>
@@ -62,10 +86,9 @@ mysqli_free_result($result);
 
                     </tr>
 
-            <?php
-                $autos = mysqli_query($connection,$vehicles);
-                while ($row = mysqli_fetch_assoc($autos))
-            { ?>
+                    <?php
+                    $autos = mysqli_query($connection, $vehicles);
+                    while ($row = mysqli_fetch_assoc($autos)) { ?>
 
                 <tbody>
                     <tr>
@@ -73,27 +96,29 @@ mysqli_free_result($result);
                         <td><?php echo $row["mark"]; ?></td>
                         <td><?php echo $row["model"]; ?></td>
                         <td><?php echo $row["bodywork"]; ?></td>
-                        <td><?php echo $row["manufacturing"]; ?></td>
+                        <!-- <td><?php echo $row["manufacturing"]; ?></td> -->
                         <td><?php echo $row["enrollment"]; ?></td>
                         <td><?php echo $row["license"]; ?></td>
                         <td><?php echo $row["paint"]; ?></td>
-                        <td><?php echo $row["cylinder"]; ?></td>
+                        <!-- <td><?php echo $row["cylinder"]; ?></td> -->
                         <td><?php echo $row["transmission"]; ?></td>
                         <td><?php echo $row["motor"]; ?></td>
                         <td><?php echo $row["suspension"]; ?></td>
-                        <td><?php echo $row["service"]; ?></td>
+                        <!-- <td><?php echo $row["service"]; ?></td> -->
                         <td><?php echo $row["settlement"]; ?></td>
-                        <td><a href="../vehicleCrud/vehicleUpdate.php?id_vehicle=<?php echo $row["id_vehicle"];?>" class="safety"><i class="fas fa-cogs"></i></a></td>
-                        <td><a href="../vehicleCrud/vehicleScrap.php?id_vehicle=<?php echo $row["id_vehicle"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
+                        <td><a href="../vehicleCrud/vehicleUpdate.php?id_vehicle=<?php echo $row["id_vehicle"]; ?>" class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../vehicleCrud/vehicleScrap.php?id_vehicle=<?php echo $row["id_vehicle"]; ?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>
             <?php
-            }   mysqli_free_result($autos)?>
+                    }
+                    mysqli_free_result($autos); ?>
 
             </thead>
             </table>
         </div>
     </div>
+
     <script scr="../js/confirm.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

@@ -38,63 +38,62 @@
             </div>
     </header>
     <br>
-    <form method="POST" action="../taller/employeeShow.php">
+    <form method="POST" action="../employeeCrud/employeeAdd.php">
         <div class="row">
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label for="input_citizen_number" class="form-label">Citizen Number</label>
-                    <input type="text" class="form-control" name="citizen_number" id="citizen_number" placeholder="only numbers without characters" />
+                    <label>Citizen Number</label>
+                    <input type="number" class="form-control" name="citizen_number" id="citizen_number" placeholder="only numbers without characters" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_email" class="form-label">Email</label>
+                    <label>Email</label>
                     <input type="text" class="form-control" name="email" id="email" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_motor_rol" class="form-label">Technical Rol</label>
+                    <label>Technical Rol</label>
                     <input type="text" class="form-control" name="motor_rol" id="motor_rol" placeholder="optional" />
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label for="input_first_name" class="form-label">Name</label>
+                    <label>Name</label>
                     <input type="text" class="form-control" name="first_name" id="first_name" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_cellphone" class="form-label">CellPhone Number</label>
-                    <input type="text" class="form-control" name="cellphone" id="cellphone" placeholder="" />
+                    <label>CellPhone Number</label>
+                    <input type="number" class="form-control" name="cellphone" id="cellphone" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_contract" class="form-label">Contract</label>
+                    <label>Contract</label>
                     <input type="date" class="form-control" name="contract" id="contract" placeholder="" />
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label for="input_last_name" class="form-label">Last Name</label>
+                    <label>Last Name</label>
                     <input type="text" class="form-control" name="last_name" id="last_name" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_agreement" class="form-label">Agreement</label>
+                    <label>Agreement</label>
                     <input type="text" class="form-control" name="agreement" id="agreement" placeholder="optional" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_cancellation" class="form-label">Cancellation</label>
+                    <label>Cancellation</label>
                     <input type="date" class="form-control" name="cancellation" id="cancellation" placeholder="" />
                 </div>
             </div>
         </div>
 
         <div class="d-grid gap-3">
-            <button class="btn btn-success" type="submit"
-                onclick="location.href='../views/employeeShow.html'">SUBMIT</button>
+            <button class="btn btn-success" type="submit">SUBMIT</button>
             <button class="btn btn-warning" type="reset" value="Reset">
                 RESET
             </button>

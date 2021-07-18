@@ -38,58 +38,57 @@
             </div>
     </header>
     <br>
-    <form method="POST" action="../taller/clientShow.php">
+    <form method="POST" action="../clientCrud/clientAdd.php">
         <div class="row">
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label for="input_citizen_number" class="form-label">Citizen Number</label>
+                    <label>Citizen Number</label>
                     <input type="text" class="form-control" name="citizen_number" id="citizen_number" placeholder="only numbers without characters" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_email" class="form-label">Email</label>
+                    <label>Email</label>
                     <input type="text" class="form-control" name="email" id="email" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_business" class="form-label">Business</label>
+                    <label>Business</label>
                     <input type="text" class="form-control" name="business" id="business" placeholder="optional" />
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label for="input_name" class="form-label">Name</label>
+                    <label>Name</label>
                     <input type="text" class="form-control" name="name" id="name" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_phone_number" class="form-label">Phone Number</label>
+                    <label>Phone Number</label>
                     <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_inscription" class="form-label">Inscription</label>
+                    <label>Inscription</label>
                     <input type="date" class="form-control" name="inscription" id="inscription" placeholder="" />
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="mb-3">
-                    <label for="input_surname" class="form-label">Surname</label>
+                    <label>Surname</label>
                     <input type="text" class="form-control" name="surname" id="surname" placeholder="" />
                 </div>
 
                 <div class="mb-3">
-                    <label for="input_profession" class="form-label">Profession</label>
+                    <label>Profession</label>
                     <input type="text" class="form-control" name="profession" id="profession" placeholder="optional" />
                 </div>
             </div>
         </div>
 
         <div class="d-grid gap-3">
-            <button class="btn btn-success" type="submit"
-                onclick="location.href='../views/vehicleShow.html'">SUBMIT</button>
+            <button class="btn btn-success" type="submit">SUBMIT</button>
             <button class="btn btn-warning" type="reset" value="Reset">
                 RESET
             </button>

@@ -25,6 +25,3 @@ if ($result) {
     echo "<script>alert('Unregistered Product, Try Again');
     window.history.go(-1)</script>";
 }
-
-mysqli_close($connection);
-?>

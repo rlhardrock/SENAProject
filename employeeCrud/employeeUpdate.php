@@ -3,9 +3,8 @@
 require "../models/connectionDatabase.php";
 
 /* $objConnection = Connect(); */
-$id = $_GET["id_employee"];
-$update_employee="SELECT * FROM employees WHERE id_employee='$id'";
-mysqli_close($connection);
+$id_employee = $_GET["id_employee"];
+$update_employee="SELECT * FROM employees WHERE id_employee='$id_employee'";
 
 ?>
 
@@ -39,52 +38,50 @@ mysqli_close($connection);
                     <?php $result = mysqli_query($connection,$update_employee);
                     while($row= mysqli_fetch_assoc($result)) { ?>
 
-                    <input type="hidden"
-                    value="<?php echo $row["id_employee"];?>"
-                    name="id">
+                    <input type="hidden" value="<?php echo $row["id_employee"];?>" name="id_employee">
 
                     <div class="mb-3">
-                        <label for="input_citizen_number" class="form-label">Citizen</label>
+                        <label>Citizen</label>
                         <input type="text" class="form-control" name="citizen_number" id="citizen_number" value="<?php echo $row["citizen_number"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_first_name" class="form-label">First Name</label>
+                        <label>First Name</label>
                         <input type="text" class="form-control" name="first_name" id="first_name" value="<?php echo $row["first_name"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_last_name" class="form-label">Last Name</label>
+                        <label>Last Name</label>
                         <input type="text" class="form-control" name="last_name" id="last_name" value="<?php echo $row["last_name"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_cellphone" class="form-label">Cellphone</label>
+                        <label>Cellphone</label>
                         <input type="text" class="form-control" name="cellphone" id="cellphone" value="<?php echo $row["cellphone"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_motor_rol" class="form-label">Motor-Rol</label>
+                        <label>Motor-Rol</label>
                         <input type="text" class="form-control" name="motor_rol" id="motor_rol" value="<?php echo $row["motor_rol"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_email" class="form-label">Email</label>
+                        <label>Email</label>
                         <input type="text" class="form-control" name="email" id="email" value="<?php echo $row["email"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_agreement" class="form-label">Agreement</label>
+                        <label>Agreement</label>
                         <input type="text" class="form-control" name="agreement" id="agreement" value="<?php echo $row["agreement"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_contract" class="form-label">Contract</label>
+                        <label>Contract</label>
                         <input type="text" class="form-control" name="contract" id="contract" value="<?php echo $row["contract"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
-                        <label for="input_cancellation" class="form-label">Cancellation</label>
+                        <label>Cancellation</label>
                         <input type="text" class="form-control" name="cancellation" id="cancellation" value="<?php echo $row["cancellation"];?>"
                         placeholder="">
                     </div>

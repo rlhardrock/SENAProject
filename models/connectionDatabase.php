@@ -1,7 +1,7 @@
 <?php
 
     $db_host="localhost";
-    $db_ddbb="taller";
+    $db_ddbb="SENAProject";
     $db_user="root";
     $db_pass="perrito";
 

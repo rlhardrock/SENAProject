@@ -2,7 +2,7 @@
 
 require '../models/connectionDatabase.php';
 
-$id = $_POST["id_product"];
+$id_product = $_POST["id_product"];
 $product_name = $_POST["product_name"];
 $factory_serial = $_POST["factory_serial"];
 $brand = $_POST["brand"];
@@ -27,6 +27,4 @@ if ($result) {
     window.history.go(-1)</script>";
 }
 mysqli_free_result($result);
-mysqli_close($connection);
-?>
 

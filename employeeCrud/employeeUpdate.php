@@ -77,17 +77,17 @@ $update_employee="SELECT * FROM employees WHERE id_employee='$id_employee'";
 
                     <div class="mb-3">
                         <label>Contract</label>
-                        <input type="text" class="form-control" name="contract" id="contract" value="<?php echo $row["contract"];?>" placeholder="">
+                        <input type="date" class="form-control" name="contract" id="contract" value="<?php echo $row["contract"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
                         <label>Cancellation</label>
-                        <input type="text" class="form-control" name="cancellation" id="cancellation" value="<?php echo $row["cancellation"];?>"
+                        <input type="date" class="form-control" name="cancellation" id="cancellation" value="<?php echo $row["cancellation"];?>"
                         placeholder="">
                     </div>
 
                     <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="Submit">Update</button>
+                        <button class="btn btn-primary" type="submit">Update</button>
                     </div>
 
                     <?php } mysqli_free_result($result) ?>

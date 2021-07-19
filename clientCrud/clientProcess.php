@@ -12,7 +12,7 @@ $business = $_POST["business"];
 $inscription = $_POST["inscription"];
 
 
-$update_client = "UPDATE clients SET citizen_number=$citizen_number',name='$name',surname='$surname',email='$email',phone_number='$phone_number',profession='$profession',business='$business',inscription='$inscription' WHERE citizen_number=$citizen_number' ";
+$update_client = "UPDATE clients SET name='$name',surname='$surname',email='$email',phone_number='$phone_number',profession='$profession',business='$business',inscription='$inscription' WHERE citizen_number='$citizen_number' ";
 
 $result = mysqli_query($connection,$update_client);
 

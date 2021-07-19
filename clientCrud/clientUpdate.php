@@ -42,7 +42,7 @@ $update_client="SELECT * FROM clients WHERE citizen_number='$citizen_number'";
 
                     <div class="mb-3">
                         <label>Citizen</label>
-                        <input type="text" class="form-control" name="citizen_number" id="citizen_number" value="<?php echo $row["citizen_number"];?>" placeholder="">
+                        <input type="number" class="form-control" name="citizen_number" id="citizen_number" value="<?php echo $row["citizen_number"];?>" readonly=»readonly»  placeholder="">
                     </div>
 
                     <div class="mb-3">
@@ -57,12 +57,12 @@ $update_client="SELECT * FROM clients WHERE citizen_number='$citizen_number'";
 
                     <div class="mb-3">
                         <label>Email</label>
-                        <input type="text" class="form-control" name="email" id="email" value="<?php echo $row["email"];?>" placeholder="">
+                        <input type="email" class="form-control" name="email" id="email" value="<?php echo $row["email"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
                         <label>PhoneNumber</label>
-                        <input type="text" class="form-control" name="phone_number" id="phone_number" value="<?php echo $row["phone_number"];?>" placeholder="">
+                        <input type="number" class="form-control" name="phone_number" id="phone_number" value="<?php echo $row["phone_number"];?>" placeholder="">
                     </div>
 
                     <div class="mb-3">
@@ -77,16 +77,14 @@ $update_client="SELECT * FROM clients WHERE citizen_number='$citizen_number'";
 
                     <div class="mb-3">
                         <label>Inscription</label>
-                        <input type="text" class="form-control" name="inscription" id="inscription" value="<?php echo $row["inscription"];?>" placeholder="">
+                        <input type="date" class="form-control" name="inscription" id="inscription" value="<?php echo $row["inscription"];?>" placeholder="">
                     </div>
 
                     <div class="d-grid gap-2">
-                        <button class="btn btn-primary" type="Submit">Update</button>
+                        <button class="btn btn-primary" type="submit">Update</button>
                     </div>
-
-                    <?php } mysqli_free_result($result); ?>
                 </form>
-
+                <?php } mysqli_free_result($result); ?>
             </div>
 
             <!-- Option 1: Bootstrap Bundle with Popper -->

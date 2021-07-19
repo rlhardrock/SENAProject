@@ -38,7 +38,7 @@
             </div>
     </header>
     <br>
-    <form method="POST" action="../taller/serviceShow.php">
+    <form method="POST" action="../serviceCrud/serviceAdd.php">
         <div class="row">
             <div class="col-md-4">
                 <!-- <div class="mb-3">
@@ -62,17 +62,17 @@
                     <label for="input_service" class="form-label">Service</label>
                     <select
                         class="form-select"
-                        name="service"
+                        name="type_service"
                         id="service"
                         aria-label="Default select example">
                         <option selected>...select</option>
 
-                        <option value="1">Suspension</option>
-                        <option value="2">Swinging</option>
-                        <option value="3">Alignment</option>
-                        <option value="4">Rectification</option>
-                        <option value="5">Calibration</option>
-                        <option value="6">Leveling</option>
+                        <option>Suspension</option>
+                        <option>Swinging</option>
+                        <option>Alignment</option>
+                        <option>Rectification</option>
+                        <option>Calibration</option>
+                        <option>Leveling</option>
                     </select>
                 </div>
 
@@ -83,7 +83,7 @@
 
                 <div class="mb-3">
                     <label for="input_cost_service" class="form-label">Cost Service</label>
-                    <input type="number" class="form-control" name="cost_service" id="cost_service" placeholder="" />
+                    <input type="number" class="form-control" name="cost_servicio" id="cost_servicio" placeholder="" />
                 </div>
             </div>
 

@@ -15,7 +15,7 @@ $warranty = $_POST["warranty"];
 $price = $_POST["price"];
 $register = $_POST["register"];
 
-$update_autoparts = "UPDATE products SET product_name=$product_name',factory_serial='$factory_serial',brand='$brand',technology='$technology',weather='$weather',bodywork='$bodywork',category='$category',highway='$highway',warranty='$warranty',price='$price',register='$register' WHERE id_product='$id_product' ";
+$update_autoparts = "UPDATE products SET product_name='$product_name',factory_serial='$factory_serial',brand='$brand',technology='$technology',weather='$weather',bodywork='$bodywork',category='$category',highway='$highway',warranty='$warranty',price='$price',register='$register' WHERE id_product='$id_product' ";
 
 $result = mysqli_query($connection,$update_autoparts);
 

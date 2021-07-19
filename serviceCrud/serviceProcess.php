@@ -7,7 +7,7 @@ $type_service = $_POST["type_service"];
 $cost_servicio = $_POST["cost_servicio"];
 $parking_day = $_POST["parking_day"];
 
-$update_service = "UPDATE services SET type_service=$type_service',cost_servicio='$cost_servicio',parking_day='$parking_day' WHERE id_service='$id_service' ";
+$update_service = "UPDATE services SET type_service='$type_service',cost_servicio='$cost_servicio',parking_day='$parking_day' WHERE id_service='$id_service' ";
 
 $result = mysqli_query($connection,$update_service);
 

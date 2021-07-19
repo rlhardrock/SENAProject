@@ -88,7 +88,7 @@ mysqli_free_result($result);
 
                 <tbody>
                     <tr>
-                        
+
                         <td><?php echo $row["citizen_number"]; ?></td>
                         <td><?php echo $row["name"]; ?></td>
                         <td><?php echo $row["surname"]; ?></td>
@@ -98,7 +98,7 @@ mysqli_free_result($result);
                         <td><?php echo $row["business"]; ?></td>
                         <td><?php echo $row["inscription"]; ?></td>
 
-                        <td><a href="../clientCrud/clientUpdate.php?citizen_number= <?php echo $row["citizen_number"];?> "class="safety"><i class="fas fa-cogs"></i></a></td>
+                        <td><a href="../clientCrud/clientUpdate.php?citizen_number= <?php echo $row["citizen_number"];?>" class="safety"><i class="fas fa-cogs"></i></a></td>
                         <td><a href="../clientCrud/clientScrap.php?citizen_number= <?php echo $row["citizen_number"];?>" class="safety"><i class="fas fa-snowplow"></i></a></td>
                     </tr>
                 </tbody>

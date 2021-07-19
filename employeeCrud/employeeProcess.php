@@ -13,7 +13,7 @@ $agreement = $_POST["agreement"];
 $contract = $_POST["contract"];
 $cancellation = $_POST["cancellation"];
 
-$update_employ = "UPDATE employees SET citizen_number=$citizen_number',first_name='$first_name',last_name='$last_name',cellphone='$cellphone',motor_rol='$motor_rol',email='$email',agreement='$agreement',contract='$contract',cancellation='$cancellation' WHERE id_employee='$id_employee' ";
+$update_employ = "UPDATE employees SET citizen_number='$citizen_number',first_name='$first_name',last_name='$last_name',cellphone='$cellphone',motor_rol='$motor_rol',email='$email',agreement='$agreement',contract='$contract',cancellation='$cancellation' WHERE id_employee='$id_employee' ";
 
 $result = mysqli_query($connection,$update_employ);
 

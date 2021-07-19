@@ -38,7 +38,7 @@
             </div>
     </header>
     <br>
-    <form method="POST" action="../taller/productShow.php">
+    <form method="POST" action="../productCrud/productAdd.php">
         <div class="row">
             <div class="col-md-4">
                 <div class="mb-3">
@@ -55,11 +55,11 @@
                         aria-label="Default select example">
                         <option selected>...select</option>
 
-                        <option value="1">Permaroad</option>
-                        <option value="2">Autumn</option>
-                        <option value="3">Summer</option>
-                        <option value="4">Spring</option>
-                        <option value="5">Winter</option>
+                        <option>Permaroad</option>
+                        <option>Autumn</option>
+                        <option>Summer</option>
+                        <option>Spring</option>
+                        <option>Winter</option>
                     </select>
                 </div>
 
@@ -77,9 +77,9 @@
                         aria-label="Default select example">
                         <option selected>...select</option>
 
-                        <option value="1">Polyvalent</option>
-                        <option value="2">Performance</option>
-                        <option value="3">SemiSlick</option>
+                        <option>Polyvalent</option>
+                        <option>Performance</option>
+                        <option>SemiSlick</option>
                     </select>
                 </div>
             </div>
@@ -99,10 +99,10 @@
                         aria-label="Default select example">
                         <option selected>...select</option>
 
-                        <option value="1">Autobus</option>
-                        <option value="2">Automovil</option>
-                        <option value="3">Pickup</option>
-                        <option value="4">Truck</option>
+                        <option>Autobus</option>
+                        <option>Automovil</option>
+                        <option>Pickup</option>
+                        <option>Truck</option>
                     </select>
                 </div>
 
@@ -133,10 +133,10 @@
                     aria-label="Default select example">
                     <option selected>...select</option>
 
-                    <option value="1">Radial</option>
-                    <option value="2">Sellomatic</option>
-                    <option value="3">RunFlat</option>
-                    <option value="4">Ecologic</option>
+                    <option>Radial</option>
+                    <option>Sellomatic</option>
+                    <option>RunFlat</option>
+                    <option>Ecologic</option>
                 </select>
             </div>
 
@@ -149,11 +149,11 @@
                     aria-label="Default select example">
                     <option selected>...select</option>
 
-                    <option value="1">AllTerrain</option>
-                    <option value="2">OffRoad</option>
-                    <option value="3">Rally</option>
-                    <option value="4">Cross</option>
-                    <option value="5">City</option>
+                    <option>AllTerrain</option>
+                    <option>OffRoad</option>
+                    <option>Rally</option>
+                    <option>Cross</option>
+                    <option>City</option>
                 </select>
             </div>
             </div>

@@ -41,79 +41,84 @@ $update_vehicle = "SELECT * FROM vehicles WHERE id_vehicle='$id_vehicle'";
                         <input type="hidden" value="<?php echo $row["id_vehicle"]; ?>" name="id_vehicle">
 
                         <div class="mb-3">
-                            <label for="input_mark" class="form-label">Mark</label>
+                            <label class="form-label">Client</label>
+                            <input type="text" class="form-control" name="citizen_number" id="citizen_number" value="<?php echo $row["citizen_number"]; ?>" readonly=»readonly» >
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mark</label>
                             <input type="text" class="form-control" name="mark" id="mark" value="<?php echo $row["mark"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_model" class="form-label">Model</label>
+                            <label class="form-label">Model</label>
                             <input type="text" class="form-control" name="model" id="model" value="<?php echo $row["model"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_bodywork" class="form-label">Bodywork</label>
+                            <label class="form-label">Bodywork</label>
                             <input type="text" class="form-control" name="bodywork" id="bodywork" value="<?php echo $row["bodywork"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_manufacturing" class="form-label">Manufacturing</label>
+                            <label class="form-label">Manufacturing</label>
                             <input type="text" class="form-control" name="manufacturing" id="manufacturing" value="<?php echo $row["manufacturing"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_enrollment" class="form-label">Enrollment</label>
+                            <label class="form-label">Enrollment</label>
                             <input type="text" class="form-control" name="enrollment" id="enrollment" value="<?php echo $row["enrollment"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_license" class="form-label">License</label>
+                            <label class="form-label">License</label>
                             <input type="text" class="form-control" name="license" id="license" value="<?php echo $row["license"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_paint" class="form-label">Paint</label>
+                            <label class="form-label">Paint</label>
                             <input type="text" class="form-control" name="paint" id="paint" value="<?php echo $row["paint"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_cylinder" class="form-label">Cylinder</label>
+                            <label class="form-label">Cylinder</label>
                             <input type="text" class="form-control" name="cylinder" id="cylinder" value="<?php echo $row["cylinder"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_transmission" class="form-label">Transmission</label>
+                            <label class="form-label">Transmission</label>
                             <input type="text" class="form-control" name="transmission" id="transmission" value="<?php echo $row["transmission"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_motor" class="form-label">Motor</label>
+                            <label class="form-label">Motor</label>
                             <input type="text" class="form-control" name="motor" id="motor" value="<?php echo $row["motor"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_suspension" class="form-label">Suspension</label>
+                            <label class="form-label">Suspension</label>
                             <input type="text" class="form-control" name="suspension" id="suspension" value="<?php echo $row["suspension"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_service" class="form-label">Service</label>
+                            <label class="form-label">Service</label>
                             <input type="text" class="form-control" name="service" id="service" value="<?php echo $row["service"]; ?>" >
                         </div>
 
                         <div class="mb-3">
-                            <label for="input_settlement" class="form-label">Settlement</label>
-                            <input type="date" class="form-control" name="settlement" id="settlement" value="<?php echo $row["settlement"]; ?>">
+                            <label class="form-label">Settlement</label>
+                            <input type="date" class="form-control" name="settlement" id="settlement" value="<?php echo $row["settlement"]; ?>" readonly=»readonly» >
                         </div>
 
                         <div class="d-grid gap-2">
                             <button class="btn btn-primary" type="Submit">Update</button>
                         </div>
 
-                    <?php }
-                    mysqli_free_result($result); ?>
                 </div>
+                <?php }  mysqli_free_result($result); ?>
             </div>
         </form>
+    </div>
 
         <script scr="../js/confirm.js"></script>
 

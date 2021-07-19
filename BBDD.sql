@@ -259,7 +259,7 @@ VALUES ('44444444','Rudolf','Schenker','redscorpion@hard.com','478','Engineer','
 INSERT INTO `SENAProject`.`clients`(`citizen_number`,`name`,`surname`,`email`,`phone_number`,`profession`,`business`,`inscription`)
 VALUES ('55555555','Wolf','Hofmann','metalheart@metal.com','465756578478','Engineer','Teutonic Blade','2019-08-29');
 INSERT INTO `SENAProject`.`clients`(`citizen_number`,`name`,`surname`,`email`,`phone_number`,`profession`,`business`,`inscription`)
-VALUES ('666666666','Marc','Storace','jummyjummy@metal.com','747478478','Kosmonaut','Painkiller Records','2020-09-29');
+VALUES ('66666666','Marc','Storace','jummyjummy@metal.com','747478478','Kosmonaut','Painkiller Records','2020-09-29');
 INSERT INTO `SENAProject`.`clients`(`citizen_number`,`name`,`surname`,`email`,`phone_number`,`profession`,`business`,`inscription`)
 VALUES ('77777777','James','Hetfield','metalmilitia@metal.com','76767678','Musician','Metallica Records','2018-09-29');
 

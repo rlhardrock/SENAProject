@@ -41,7 +41,7 @@
   </header>
   <br>
 
-  <form method="post" action="./../vehicleCrud/vehicleAdd.php">
+  <form method="post" action="../vehicleCrud/vehicleAdd.php">
     <div class="row">
       <div class="col-md-3">
         <div class="mb-3">
@@ -138,7 +138,7 @@
 
         <div class="mb-3">
           <label>Client - Citizen Number</label>
-          <input type="number" class="form-control" name="citizen_number" id="manufacturing" placeholder="the client must exits" />
+          <input type="number" class="form-control" name="citizen_number" id="manufacturing" placeholder="the client must first be registered" Required/>
         </div>
 
       </div>
@@ -162,7 +162,7 @@
 
         <div class="mb-3">
           <label>Settlement</label>
-          <input type="date" class="form-control" name="settlement" id="settlement" />
+          <input type="date" class="form-control" name="settlement" id="settlement" placeholder=""/>
         </div>
 
 

@@ -1,11 +1,11 @@
 <?php
 
-    $db_host="localhost";
+    /* $db_host="localhost";
     $db_ddbb="SENAProject";
     $db_user="root";
-    $db_pass="perrito";
+    $db_pass="perrito"; */
 
-    $connection = new mysqli ("$db_host","$db_user","$db_pass","$db_ddbb");
+    $connection = new mysqli ("remotemysql.com","xf5zyRzLkg","FtsBvtxBLq","xf5zyRzLkg");
     /* $connection = new mysqli ("localhost","root","perrito","taller"); */
 
         if ($connection -> connect_errno){

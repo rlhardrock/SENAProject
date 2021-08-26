@@ -405,7 +405,7 @@
         hombre como animal mas evolucionado, no hallará la paz por sí mismo (Albert Schweitzer)</p>
     </div>
     <div class="footer-column footer-m50d25">
-      <h2 class="footer-title" id="connect-us">CONTACT US</h2>
+      <h2 class="footer-title" id="connect-us" >CONTACT US</h2>
       <div class="contact-icon"><i class="fas fa-phone-alt"></i>
         <p> +57 666 777 674523 Omicron 8</p>
       </div>
@@ -415,6 +415,7 @@
       <div class="contact-icon"><i class="fas fa-map-marked-alt"></i>
         <p>Av. HellRaiser Cll Spectrum 54 N° 35JP - 20 Tramontana-Levante</p>
       </div>
+      <a href="#nav-nav"> Navegation </a>
     </div>
   </footer>
 
